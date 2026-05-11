@@ -1,5 +1,3 @@
-# smart-locker-ids-ips
-Дипломный проект система обнаружения и предотвращения вторжений
 # Smart Locker IDS/IPS
 
 Дипломный проект на тему:
@@ -25,33 +23,17 @@ Smart Locker IDS/IPS — программный комплекс для мони
 - автоматическая блокировка IP-адресов через iptables;
 - поддержка whitelist (белого списка);
 - журналирование событий безопасности;
-- централизованная конфигурация системы.
-
----
-
-# Используемые технологии
-
-- Python 3
-- Scapy
-- iptables
-- Astra Linux (Воронеж)
-- Linux networking
 
 ---
 
 # Структура проекта
 
-```bash
-smart_locker_ids_ips/
-│
-├── main.py          # Точка входа в систему
-├── monitor.py       # Мониторинг и перехват трафика
-├── ids.py           # Логика обнаружения атак
-├── ips.py           # Блокировка IP-адресов
-├── logger.py        # Журналирование событий
-├── config.py        # Конфигурация системы
-└── ids_ips.log      # Лог-файл
-```
+main.py           Точка входа в систему
+monitor.py        Мониторинг и перехват трафика
+ids.py            Логика обнаружения атак
+ips.py            Блокировка IP-адресов
+logger.py         Журналирование событий
+config.py         Конфигурация системы
 
 ---
 
@@ -61,38 +43,7 @@ smart_locker_ids_ips/
 
 - Astra Linux / Debian-based Linux
 - Python 3.10+
-- root/sudo права
 - установленный iptables
-
----
-
-# Установка
-
-## 1. Клонирование репозитория
-
-```bash
-git clone https://github.com/USERNAME/smart-locker-ids-ips.git
-```
-
-## 2. Переход в папку проекта
-
-```bash
-cd smart-locker-ids-ips
-```
-
-## 3. Установка зависимостей
-
-Установить библиотеку Scapy:
-
-```bash
-pip install scapy
-```
-
-или:
-
-```bash
-pip3 install scapy
-```
 
 ---
 
